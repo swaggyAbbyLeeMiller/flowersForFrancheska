@@ -68,8 +68,8 @@ a {
 
 .btn {
   border: none;
-  width: 15em;
-  height: 5em;
+  width: 12em;
+  height: 3em;
   border-radius: 3em;
   display: flex;
   justify-content: center;
@@ -121,3 +121,32 @@ a {
   92% { transform: rotate(1deg); }
   100% { transform: rotate(0); }
 }
+
+
+#paragraph-container {
+  position: absolute;
+  top: 80vh;
+  right: 10px;
+  z-index: 10;  /* Ensure it's above background */
+  display: block; /* Ensure it's displayed */
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 10;  /* Ensure it's visible */
+  position: relative;
+}
+
+.new-paragraph {
+  font-size: 1.5rem;
+  color: white; /* White text */
+  text-align: center;
+  position: absolute;
+  top: 80vh; /* Adjust the top value to place it where you want */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20; /* Make sure it's above other content */
+}
+

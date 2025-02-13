@@ -43,13 +43,13 @@
         document.addEventListener("DOMContentLoaded", function () {
             const heartContainer = document.querySelector(".floating-hearts");
         
-            for (let i = 0; i < 15; i++) { // Generates 15 hearts
+            for (let i = 0; i < 15; i++) {
                 let heart = document.createElement("span");
-                heart.innerHTML = "❤️"; // Emoji heart
-                heart.style.left = Math.random() * 100 + "vw"; // Random horizontal position
-                heart.style.animationDuration = (Math.random() * 3 + 3) + "s"; // Random duration (3s-6s)
-                heart.style.animationDelay = Math.random() * 2 + "s"; // Random delay
-                heart.style.fontSize = Math.random() * 1.5 + 1 + "rem"; // Random size variation
+                heart.innerHTML = "❤️"; 
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+                heart.style.animationDelay = Math.random() * 2 + "s"; 
+                heart.style.fontSize = Math.random() * 1.5 + 1 + "rem"; 
                 heartContainer.appendChild(heart);
             }
         });
